@@ -1,0 +1,47 @@
+{% load static %}
+
+<div class='row top'>
+    <div class='col-4'>
+        <section id="gallery" class="gallery">
+            <div class="container-fluid">
+              
+              <div class="row justify-content-center">
+                <div class="col-xl-12">
+                  <div class="gallery-item h-100">
+                    <img src="{% static 'assets/img/gallery/gallery-1.jpg' %}" class="img-fluid" alt="">
+                    <div class="gallery-links d-flex align-items-center justify-content-center">
+                      <a href="{% static 'assets/img/gallery/gallery-1.jpg' %}" title="Gallery 1" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                      <a href="/blog/details/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                      <a href="/blog/details/" title='share' class="details-link"><i class="bi bi-share"></i></a>
+                    </div>
+                  </div>
+                </div><!-- End Gallery Item -->
+              </div>
+      
+            </div>
+          </section>
+    </div>
+    <div class='col-6 text-container'>
+        <h2>Topic</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type 
+            specimen book. It has survived not only five centuries, but also the leap into 
+            electronic typesetting, remaining essentially unchanged.
+        </p>
+        <div class='row'>
+            <div class='col-3'>
+                <a href='/'><i class="bi bi-star"></i> Like 198</a>
+            </div>
+            <div class='col-3'>
+                <a href='/'><i class="bi bi-whatsapp"></i> Connect</a>
+            </div>
+            <div class='col-3'>
+                <a href='/'><i class="bi bi-share"></i> Share</a>
+            </div>
+            <div class='col-3'>
+                <a href='/'><i class="bi bi-book"></i> Read More</a>
+            </div>
+        </div>    
+    </div>
+</div>

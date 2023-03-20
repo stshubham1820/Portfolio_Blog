@@ -1,0 +1,62 @@
+{% include 'navbar.html' %}
+{% load static %}
+
+<style>
+    
+    .cont{
+        height : 600px;
+        position:relative;
+        overflow : auto;
+        margin-bottom : 20%;
+    }
+    .top {
+        margin-top:20%;
+        background-color:#27a776;
+        width : 90%;
+        margin-left : 5%;
+        border-radius : 15px;
+    }
+    .top:hover{
+        opacity: 1;
+        background-color:black;
+    }
+    .gallery{
+        padding : 10px;
+        margin-top : 20px;
+        margin-bottom : 20px;
+    }
+    .text-container{
+        margin-top : 25px;
+        color:#ffffff;
+    }
+</style>
+
+<blog class='cont'>
+{% include 'content.html' %}
+<div class='row top'>
+    <div class='col-4'>
+        <section id="gallery" class="gallery">
+            <div class="container-fluid">
+              
+              <div class="row justify-content-center">
+                <div class="col-xl-12">
+                  <div class="gallery-item h-100">
+                    <img src="{% static 'assets/img/gallery/gallery-1.jpg' %}" class="img-fluid" alt="">
+                    <div class="gallery-links d-flex align-items-center justify-content-center">
+                      <a href="{% static 'assets/img/gallery/gallery-1.jpg' %}" title="Gallery 1" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                      <a href="/blog/details/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                      <a href="/blog/details/" title='share' class="details-link"><i class="bi bi-share"></i></a>
+                    </div>
+                  </div>
+                </div><!-- End Gallery Item -->
+              </div>
+      
+            </div>
+          </section>
+    </div>
+    <div class='col-6 text-container'>
+        <p>Something sine hddhdhkd sdnkjddkjbdkb bdsbjkdbsjk</p>
+    </div>
+</div>
+</blog>
+{% include 'footer.html' %}
