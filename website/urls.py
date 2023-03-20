@@ -7,6 +7,7 @@ urlpatterns = [
     path('about/',about),
     path('services/',service),
     path('contact/',contact),
+    path('blogss/',blog),
     path('accounts/login/',loginview ),
     path('accounts/', include('allauth.urls')),
 ]
